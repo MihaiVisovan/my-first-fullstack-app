@@ -1,0 +1,24 @@
+{
+  "name": "my-first-fullstack-app",
+  "version": "1.0.0",
+  "description": "My first vue and express app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "local": "nodemon server/index.js"
+  },
+  "type": "module",
+  "author": "Mihai Visovan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^13.0.0",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  }
+}
