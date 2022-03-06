@@ -5,6 +5,7 @@ import 'dotenv/config';
 import posts from './routes/api/posts.js';
 import path from 'path';
 
+const __dirname = path.resolve();
 const app = express();
 
 // Middleware
@@ -14,13 +15,12 @@ app.use(cors());
 // Routes
 app.use('/api/posts', posts);
 
-// Handle production
 if (process.env.NODE_ENV === 'production') {
   // Static folder
-  app.use(express.static(path.resolve(__dirname, '/static/')));
+  app.use(express.static(path.resolve(__dirname + '/static/')));
 
   // Handle SPA
-  app.get('.*'), (req, res) => res.sendFile(path.resolve(__dirname, '/static/index.html'));
+  app.get('*'), (req, res) => res.sendFile(path.resolve(__dirname + '/static/'));
 }
 
 // Server
