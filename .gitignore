@@ -1,7 +1,6 @@
 #node
 /server/node_modules
 /server/package-lock.json
-/server/.env
 
 #vue
 /client/node_modules
