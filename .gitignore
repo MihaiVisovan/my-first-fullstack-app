@@ -1,8 +1,0 @@
-#node
-/server/node_modules
-/server/package-lock.json
-
-#vue
-/client/node_modules
-/client/package-lock.json
-
