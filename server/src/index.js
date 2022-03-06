@@ -15,13 +15,13 @@ app.use(cors());
 // Routes
 app.use('/api/posts', posts);
 
-// if (process.env.NODE_ENV === 'production') {
-// Static folder
-app.use(express.static(path.resolve(__dirname + '/static/')));
+if (process.env.NODE_ENV === 'production') {
+  // Static folder
+  app.use(express.static(path.resolve(__dirname + '/static/')));
 
-// Handle SPA
-app.get('*'), (req, res) => res.sendFile(path.resolve(__dirname + '/static/index.html'));
-// }
+  // Handle SPA
+  app.get(/.*/, (req, res) => res.sendFile(path.resolve(__dirname + '/static/index.html')));
+}
 
 // Server
 const port = process.env.PORT || 5000;
