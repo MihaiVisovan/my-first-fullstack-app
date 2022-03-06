@@ -20,7 +20,7 @@ app.use('/api/posts', posts);
 app.use(express.static(path.resolve(__dirname + '/static/')));
 
 // Handle SPA
-app.get('*'), (req, res) => res.sendFile(path.resolve(__dirname + '/static/'));
+app.get('*'), (req, res) => res.sendFile(path.resolve(__dirname + '/static/index.html'));
 // }
 
 // Server
