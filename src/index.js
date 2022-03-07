@@ -1,5 +1,4 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import cors from 'cors';
 import 'dotenv/config';
 import posts from './routes/api/posts.js';
@@ -9,7 +8,7 @@ const __dirname = path.resolve();
 const app = express();
 
 // Middleware
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(cors());
 
 // Routes
