@@ -1,0 +1,1 @@
+import{_ as e}from"./index.19f97069.js";import{o,c as t}from"./vendor.4002b013.js";const r={name:"AnotherComponent",data(){return{}}};function n(a,c,p,s,m,_){return o(),t("div")}var i=e(r,[["render",n]]);export{i as default};
