@@ -1,0 +1,1 @@
+import{_ as r}from"./index.070820af.js";import{o as e,c as t}from"./vendor.13e6b56b.js";const o={name:"Cart"};function a(c,n,s,p,_,f){return e(),t("div")}var d=r(o,[["render",a]]);export{d as default};
