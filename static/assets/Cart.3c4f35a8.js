@@ -1,0 +1,1 @@
+import{_ as e}from"./index.80721060.js";import{o as r,c as t,n as s}from"./vendor.50e9f247.js";const n={name:"Cart",data(){return{containerClass:"cart"}}};function o(_,c,p,l,a,i){return r(),t("div",{class:s(a.containerClass)},"CART",2)}var m=e(n,[["render",o],["__scopeId","data-v-07bfb435"]]);export{m as default};
